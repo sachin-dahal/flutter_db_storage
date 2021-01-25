@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_db_storage/utility/bloc/data_bloc.dart';
-import 'package:get/get.dart';
+import 'package:flutter_db_storage/utility/bloc/data_event.dart';
 import 'package:hive/hive.dart';
 
 class ViewData extends StatelessWidget {
@@ -29,7 +29,7 @@ class ViewData extends StatelessWidget {
                         icon: Icon(Icons.delete),
                         onPressed: () {
                           box.deleteAt(index);
-                          // bloc.add(ViewDataEvent());
+                          //bloc.add(ResetDataEvent());
                         },
                       ),
                     ),
